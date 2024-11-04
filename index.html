@@ -3,16 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
-  <body></body>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="main-row">
+          <a class="logo" href="#"><img src="./images/logo.svg" /></a>
+          <div class="main-header">
+            <h1 class="main-title"><span>We are launching</span> soon!</h1>
+            <p class="main-text">Subscribe and get notified</p>
+          </div>
+          <form class="main-form">
+            <div class="main-input">
+              <input
+                class="email"
+                type="email"
+                placeholder="Your email address…"
+              />
+              <p class="text"></p>
+            </div>
+
+            <button class="btn" type="submit">Notify Me</button>
+          </form>
+
+          <div class="main-image">
+            <picture>
+              <source
+                media="(max-width: 375px)"
+                srcset="./images/dashboard-sm.png"
+              />
+              <img src="./images/illustration-dashboard.png" alt="image" />
+            </picture>
+          </div>
+          <div class="main-footer">
+            <div class="main-socials">
+              <a href="#" class="socials-icon" target="_blank"
+                ><ion-icon name="logo-facebook"></ion-icon>
+              </a>
+              <a href="#" class="socials-icon" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon
+              ></a>
+              <a href="#" class="socials-icon" target="_blank"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </div>
+            <p class="main-copyright">© Copyright Ping. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
